@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Homepage {% endblock %}
+
+{% block content %}
+<div>
+  <h1>Pets</h1>
+
+  {% for pet in pets %}
+  <div>
+    <img src="{{ pet.photo_url }}" alt="Picture of {{ pet.name }}">
+    <p>{{ pet.name }} <b>is available!</b></p>
+  </div>
+  {% endfor %}
+
+  <form action="/add">
+    <button class="btn btn-primary" formmethod="POST">Add a Pet</button>
+  </form>
+</div>
+
+
+{% endblock %}
