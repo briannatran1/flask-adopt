@@ -3,13 +3,15 @@
 {% block title %} Homepage {% endblock %}
 
 {% block content %}
-<div>
+<div class="container">
   <h1>Pets</h1>
 
   {% for pet in pets %}
   <div>
     <img src="{{ pet.photo_url }}" alt="Picture of {{ pet.name }}">
-    <p>{{ pet.name }} <b>is available!</b></p>
+    <a href="/{{ pet.id }}">
+      <p>{{ pet.name }}
+    </a><b>is available!</b></p>
   </div>
   {% endfor %}
 
