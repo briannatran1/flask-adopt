@@ -26,12 +26,12 @@ class Pet(db.Model):
     )
 
     name = db.Column(
-        db.String(25), 
+        db.String(25),
         nullable=False
     )
 
     species = db.Column(
-        db.String(25), 
+        db.String(25),
         nullable=False
     )
 
@@ -50,10 +50,9 @@ class Pet(db.Model):
         db.Text,
         nullable=True
     )
-    
+
     available = db.Column(
         db.Boolean,
         nullable=False,
         default='available'
     )
-
