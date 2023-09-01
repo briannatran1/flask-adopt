@@ -5,7 +5,7 @@ import os
 from flask import Flask
 from flask_debugtoolbar import DebugToolbarExtension
 
-from models import connect_db
+from models import db, connect_db, Pet
 
 app = Flask(__name__)
 
