@@ -54,5 +54,5 @@ class Pet(db.Model):
     available = db.Column(
         db.Boolean,
         nullable=False,
-        default='available'
+        default=True
     )
