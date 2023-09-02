@@ -65,6 +65,9 @@ def show_add_pet_form():
                                form=form)
 
 
+# combine show_pet_details with edit_pet
+# use syntax for default image
+
 @app.route('/<int:pet_id>', methods=['GET', 'POST'])
 def show_pet_details(pet_id):
     """Shows pet details on a specific pet"""
